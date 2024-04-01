@@ -1,8 +1,4 @@
-import torch
 import torch.nn as nn
-from torch.utils.data import DataLoader
-from torchvision import datasets
-from torchvision.transforms import transforms
 
 
 class generator(nn.Module):
@@ -12,3 +8,10 @@ class generator(nn.Module):
         self.fc2 = nn.Linear(1024, 2048)
         self.fc3 = nn.Linear(2048, 28*28)
         self.activation = nn.ReLU()
+
+    def forward(self, x):
+        x = self.activation(self.fc1(x))
+        x = self.activation(self.fc2(x))
+        x = self.fc3(x)
+        x = x.view(-1, 1, 28, 28)
+        return nn.Tanh()(x)
