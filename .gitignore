@@ -1,2 +1,4 @@
 .env
 .vscode
+data/GAN/MNIST/raw/*
+!data/GAN/MNIST/raw/.gitkeep
