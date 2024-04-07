@@ -11,7 +11,7 @@
 ## モデルのトレーニング
 - 以下のコマンドをルートディレクトリ(`/`)で実行してください。
 ```
-python .\src\methods\GAN\main.py
+python -m src.methods.GAN.main
 ```
 
 ## 画像生成

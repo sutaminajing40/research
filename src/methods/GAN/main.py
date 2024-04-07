@@ -1,4 +1,4 @@
-from train import train
+from .train import train
 
 
 def main():

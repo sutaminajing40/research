@@ -1,11 +1,11 @@
 import torch
 import torch.nn as nn
 import torch.optim as optim
-from models.discriminator import discriminator
-from models.generator import generator
 
 from src.utils.save_model import save_model
 
+from ..models.discriminator import discriminator
+from ..models.generator import generator
 from .dataloader import get_dataloader
 
 
