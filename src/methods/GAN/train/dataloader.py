@@ -10,6 +10,6 @@ def get_dataloader(batch_size: int = 64):
 
     # Load data
     train_set = datasets.MNIST(
-        'mnist/', train=True, download=True, transform=transform)
+        "./data/GAN/", train=True, download=True, transform=transform)
     train_loader = DataLoader(train_set, batch_size=batch_size, shuffle=True)
     return train_loader

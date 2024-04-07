@@ -1,4 +1,8 @@
 .env
 .vscode
+
 data/GAN/MNIST/raw/*
 !data/GAN/MNIST/raw/.gitkeep
+
+experiments/trained_models/GAN/*
+!experiments/trained_models/GAN/.gitkeep
