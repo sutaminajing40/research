@@ -6,3 +6,7 @@ data/GAN/MNIST/raw/*
 
 experiments/trained_models/GAN/*
 !experiments/trained_models/GAN/.gitkeep
+
+experiments/results/GAN/generated_images/*
+!experiments/results/GAN/generated_images/.gitkeep
+

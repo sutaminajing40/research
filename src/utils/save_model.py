@@ -19,5 +19,5 @@ def save_model(
         f"{class_name}_epoch_{epoch}_{current_time}.pth")
 
     # モデルの保存
-    torch.save(model, model_path)
+    torch.save(model.state_dict(), model_path)
     print(f'Model saved at {model_path}')
