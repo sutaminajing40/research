@@ -1,11 +1,12 @@
 # 概要
 - GAN(Generative Adversartial Network)を実装し、理解を深めるための実験
+- データセットはMNISTを使用しています。
 - 次のサイトを参考にさせていただきました。
   - [PytorchでGANを実装してみた](https://qiita.com/keiji_dl/items/45a5775a361151f9189d)
 
 # 環境作成方法
 - 以下のREADME.mdを参考にして作成してください。
-[README.md](../../README.md)
+[README.md](../../../README.md)
 
 # 起動方法
 ## モデルのトレーニング
@@ -37,7 +38,8 @@ streamlit run src\methods\GAN\generator\display_images.py
 ```
 
 # 結果
-
+- GANをトレーニングして画像を生成することができました。
+- 単純なニューラルネットワークだったため性能が悪かったと思います。
 # 成果
 
 # 参考文献

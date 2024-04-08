@@ -3,7 +3,7 @@
 - 各実験のREADME.mdに実験内容、方法、結果等を記述
 
 # 実験内容
-- [GAN(Generative Adversartial Network)の簡単な実装](methods/GAN/README.md)
+- [GAN(Generative Adversartial Network)の簡単な実装](src/methods/GAN/README.md)
 - 
 
 # 仮想環境作成方法
