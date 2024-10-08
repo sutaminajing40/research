@@ -10,3 +10,4 @@ experiments/trained_models/GAN/*
 experiments/results/GAN/generated_images/*
 !experiments/results/GAN/generated_images/.gitkeep
 
+.venv
