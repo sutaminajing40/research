@@ -51,8 +51,8 @@ class PNN(nn.Module):
         return data
 
     def save_model(self, save_dir: str):
-        current_date = datetime.now().strftime("%Y%m%d")
-        model_name = f"pnn_model_{current_date}.pth"
+        current_datetime = datetime.now().strftime("%Y%m%d_%H%M%S")
+        model_name = f"pnn_model_{current_datetime}.pth"
         save_path = os.path.join(save_dir, model_name)
         torch.save(self.state_dict(), save_path)
 
