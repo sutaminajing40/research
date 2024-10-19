@@ -1,0 +1,2 @@
+RADIUS = 1.0
+INPUT = [1, 0]

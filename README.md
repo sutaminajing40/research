@@ -6,7 +6,7 @@
 # 実験内容
 
 - [GAN(Generative Adversartial Network)の簡単な実装](src/methods/GAN/README.md)
-- [PNN(Probabilistic Neural Network)での XOR 分類](src/methods/pnn/README.md)
+- [PNN(Probabilistic Neural Network)での XOR 分類](src/methods/xor_pnn/README.md)
 
 # 仮想環境作成方法
 

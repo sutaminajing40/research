@@ -2,9 +2,12 @@ import argparse
 import os
 import sys
 
-from .model import PNN
+import torch
 
-MODEL_DIR = "experiments/trained_models/pnn"
+from .consts import INPUT
+from .model import XOR_PNN
+
+MODEL_DIR = "experiments/trained_models/xor_pnn"
 
 
 def parse_arguments():
@@ -19,6 +22,6 @@ if not args.model_path:
     print("エラー: モデルファイルのパスを指定してください。", file=sys.stderr)
     sys.exit(1)
 
-pnn = PNN.load_model(os.path.join(MODEL_DIR, args.model_path))
+xor_pnn = XOR_PNN.load_model(os.path.join(MODEL_DIR, args.model_path))
 
-print(pnn([1, 1]))
+print(xor_pnn(torch.tensor(INPUT, dtype=torch.float32)))
