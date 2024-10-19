@@ -11,3 +11,6 @@ experiments/results/GAN/generated_images/*
 !experiments/results/GAN/generated_images/.gitkeep
 
 .venv
+
+experiments/trained_models/*
+!experiments/trained_models/.gitkeep
